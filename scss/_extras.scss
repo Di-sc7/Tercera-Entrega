@@ -1,0 +1,40 @@
+.textoExtras {
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    background-color: skyblue;
+
+}
+
+@mixin card2 ($height, $width) {
+    height:$height;
+    width:$width;
+}
+
+@mixin cardFlex ($display, $direction, $justify) {
+    display:$display;
+    flex-direction:$direction;
+    justify-content:$justify;
+}
+
+.divCardFlex {
+    @include cardFlex (flex, row, center);
+    @include card2(100px, 50px)
+}
+
+.divBox {
+    height: 50px;
+    width: 25px;
+    border: 1px solid black
+}
+
+divBox2 {
+    @extend .divBox;
+    border-radius: 10px
+}
+

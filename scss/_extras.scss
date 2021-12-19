@@ -33,7 +33,7 @@
     border: 1px solid black
 }
 
-divBox2 {
+.divBox2 {
     @extend .divBox;
     border-radius: 10px
 }
